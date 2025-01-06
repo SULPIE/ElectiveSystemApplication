@@ -1,0 +1,203 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|c:\\users\\sulpie\\source\\repos\\electiveapp\\electiveapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|solutionrelative:electiveapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|c:\\users\\sulpie\\source\\repos\\electiveapp\\electiveapp\\menuitems\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|solutionrelative:electiveapp\\menuitems\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|c:\\users\\sulpie\\source\\repos\\electiveapp\\electiveapp\\database\\studentperforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|solutionrelative:electiveapp\\database\\studentperforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|c:\\users\\sulpie\\source\\repos\\electiveapp\\electiveapp\\database\\subjectperforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|solutionrelative:electiveapp\\database\\subjectperforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\electiveapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|solutionrelative:electiveapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|c:\\users\\sulpie\\source\\repos\\electiveapp\\electiveapp\\menuitems\\planitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|solutionrelative:electiveapp\\menuitems\\planitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|c:\\users\\sulpie\\source\\repos\\electiveapp\\electiveapp\\menuitems\\studentsitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|solutionrelative:electiveapp\\menuitems\\studentsitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|c:\\users\\sulpie\\source\\repos\\electiveapp\\electiveapp\\menuitems\\subjectitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|solutionrelative:electiveapp\\menuitems\\subjectitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|c:\\users\\sulpie\\source\\repos\\electiveapp\\electiveapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|solutionrelative:electiveapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\electiveapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|solutionrelative:electiveapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|c:\\users\\sulpie\\source\\repos\\electiveapp\\electiveapp\\database\\userperforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0696A6-1ED7-4568-9F57-3C6C6E600462}|ElectiveApp\\ElectiveApp.csproj|solutionrelative:electiveapp\\database\\userperforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlanItem.cs",
+              "DocumentMoniker": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\MenuItems\\PlanItem.cs",
+              "RelativeDocumentMoniker": "ElectiveApp\\MenuItems\\PlanItem.cs",
+              "ToolTip": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\MenuItems\\PlanItem.cs",
+              "RelativeToolTip": "ElectiveApp\\MenuItems\\PlanItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T19:56:32.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MenuItem.cs",
+              "DocumentMoniker": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\MenuItems\\MenuItem.cs",
+              "RelativeDocumentMoniker": "ElectiveApp\\MenuItems\\MenuItem.cs",
+              "ToolTip": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\MenuItems\\MenuItem.cs",
+              "RelativeToolTip": "ElectiveApp\\MenuItems\\MenuItem.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAmwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T19:46:42.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentPerforms.cs",
+              "DocumentMoniker": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\DataBase\\StudentPerforms.cs",
+              "RelativeDocumentMoniker": "ElectiveApp\\DataBase\\StudentPerforms.cs",
+              "ToolTip": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\DataBase\\StudentPerforms.cs",
+              "RelativeToolTip": "ElectiveApp\\DataBase\\StudentPerforms.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T18:49:37.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SubjectPerforms.cs",
+              "DocumentMoniker": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\DataBase\\SubjectPerforms.cs",
+              "RelativeDocumentMoniker": "ElectiveApp\\DataBase\\SubjectPerforms.cs",
+              "ToolTip": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\DataBase\\SubjectPerforms.cs",
+              "RelativeToolTip": "ElectiveApp\\DataBase\\SubjectPerforms.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T17:08:52.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SubjectItem.cs",
+              "DocumentMoniker": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\MenuItems\\SubjectItem.cs",
+              "RelativeDocumentMoniker": "ElectiveApp\\MenuItems\\SubjectItem.cs",
+              "ToolTip": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\MenuItems\\SubjectItem.cs",
+              "RelativeToolTip": "ElectiveApp\\MenuItems\\SubjectItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T21:24:52.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StudentsItem.cs",
+              "DocumentMoniker": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\MenuItems\\StudentsItem.cs",
+              "RelativeDocumentMoniker": "ElectiveApp\\MenuItems\\StudentsItem.cs",
+              "ToolTip": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\MenuItems\\StudentsItem.cs",
+              "RelativeToolTip": "ElectiveApp\\MenuItems\\StudentsItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T20:32:20.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\MainForm.cs",
+              "RelativeDocumentMoniker": "ElectiveApp\\MainForm.cs",
+              "ToolTip": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\MainForm.cs",
+              "RelativeToolTip": "ElectiveApp\\MainForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T19:51:56.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\MainForm.cs",
+              "RelativeDocumentMoniker": "ElectiveApp\\MainForm.cs",
+              "ToolTip": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "ElectiveApp\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T11:37:20.523Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\Form1.cs",
+              "RelativeDocumentMoniker": "ElectiveApp\\Form1.cs",
+              "ToolTip": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\Form1.cs",
+              "RelativeToolTip": "ElectiveApp\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T15:57:56.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\Form1.cs",
+              "RelativeDocumentMoniker": "ElectiveApp\\Form1.cs",
+              "ToolTip": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "ElectiveApp\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T11:37:20.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserPerforms.cs",
+              "DocumentMoniker": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\DataBase\\UserPerforms.cs",
+              "RelativeDocumentMoniker": "ElectiveApp\\DataBase\\UserPerforms.cs",
+              "ToolTip": "C:\\Users\\SULPIE\\source\\repos\\ElectiveApp\\ElectiveApp\\DataBase\\UserPerforms.cs",
+              "RelativeToolTip": "ElectiveApp\\DataBase\\UserPerforms.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T00:04:22.173Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
