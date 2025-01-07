@@ -18,19 +18,31 @@ namespace ElectiveApp.MenuItems
             this.Init();
         }
 
-        public override void Delete(params string[] args)
+        public override bool Delete(params string[] args)
         {
-            DeleteDataFromBD(args[0]);
+            if (DeleteDataFromBD(args[0]))
+            {
+                return true;
+            }
+            return false;
         }
 
-        public override void Init(params string[] args)
+        public override bool Init(params string[] args)
         {
-            InitDataFromDB();
+            if (InitDataFromDB())
+            {
+                return true;
+            }
+            return false;
         }
 
-        public override void Insert(params string[] args)
+        public override bool Insert(params string[] args)
         {
-            AddDataIntoBD();
+            if (AddDataIntoBD())
+            {
+                return true;
+            }
+            return false;
         }
 
         public override bool Update(params string[] args)

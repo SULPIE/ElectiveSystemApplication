@@ -21,73 +21,105 @@ namespace ElectiveApp.MenuItems
 
         public string GetName => _nameofitem;
 
-        public abstract void Init(params string[] args);
-        public abstract void Delete(params string[] args);
+        public abstract bool Init(params string[] args);
+        public abstract bool Delete(params string[] args);
         public abstract bool Update(params string[] args);
-        public abstract void Insert(params string[] args);
+        public abstract bool Insert(params string[] args);
 
-        protected void InitDataFromDB()
+        protected bool InitDataFromDB()
         {
-            if (_connection == null || _dataGridView == null) return;
+            if (_connection == null || _dataGridView == null) return false;
 
-            MySqlDataAdapter MyDA = new()
+            try
             {
-                SelectCommand = new MySqlCommand(_selectquery, _connection)
-            };
+                MySqlDataAdapter MyDA = new()
+                {
+                    SelectCommand = new MySqlCommand(_selectquery, _connection)
+                };
 
-            DataTable table = new();
-            MyDA.Fill(table);
+                DataTable table = new();
+                MyDA.Fill(table);
 
-            BindingSource bSource = new()
-            {
-                DataSource = table
-            };
+                BindingSource bSource = new()
+                {
+                    DataSource = table
+                };
 
-            _dataGridView.DataSource = bSource;
+                _dataGridView.DataSource = bSource;
 
-            for(int i = 0; i < _columnsname.Length; i++)
-            {
-                _dataGridView.Columns[i].HeaderCell.Value = _columnsname[i];
+                for (int i = 0; i < _columnsname.Length; i++)
+                {
+                    _dataGridView.Columns[i].HeaderCell.Value = _columnsname[i];
+                }
+                _dataGridView.Columns[0].ReadOnly = true;
+
+                return true;
             }
-
-            _dataGridView.Columns[0].ReadOnly = true;
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
-        protected void DeleteDataFromBD(string id)
+        protected bool DeleteDataFromBD(string id)
         {
-            if (_connection == null || _dataGridView == null) return;
+            if (_connection == null || _dataGridView == null) return false;
 
-            MySqlCommand command = _connection.CreateCommand();
+            try
+            {
+                MySqlCommand command = _connection.CreateCommand();
 
-            command.CommandText = "DELETE FROM " + _nameofitem + " WHERE id=@ID";
-            command.Parameters.AddWithValue("@ID", id);
+                command.CommandText = "DELETE FROM " + _nameofitem + " WHERE id=@ID";
+                command.Parameters.AddWithValue("@ID", id);
 
-            command.ExecuteNonQuery();
+                command.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
-        protected void AddDataIntoBD()
+        protected bool AddDataIntoBD()
         {
-            if (_connection == null || _dataGridView == null) return;
+            if (_connection == null || _dataGridView == null) return false;
 
-            MySqlCommand command = _connection.CreateCommand();
+            try
+            {
+                MySqlCommand command = _connection.CreateCommand();
 
-            command.CommandText = "INSERT INTO " + _nameofitem + "()" + " VALUES()";
-            command.ExecuteNonQuery();
+                command.CommandText = "INSERT INTO " + _nameofitem + "()" + " VALUES()";
+                command.ExecuteNonQuery();
 
-            InitDataFromDB();
+                InitDataFromDB();
+                return true;
+            }
+            catch 
+            {
+                return false;
+            }
         }
 
-        protected void UpdateDataInDB(string id, string columnid, string Text)
+        protected bool UpdateDataInDB(string id, string columnid, string Text)
         {
-            if (_connection == null || _dataGridView == null) return;
+            if (_connection == null || _dataGridView == null) return false;
 
-            MySqlCommand command = _connection.CreateCommand();
+            try
+            {
+                MySqlCommand command = _connection.CreateCommand();
 
-            command.CommandText = "UPDATE " + _nameofitem + " SET " +
-                _columnsnameInTable[Convert.ToInt32(columnid)].ToString() +
-                "=@Param" + " WHERE id=" + id;
-            command.Parameters.AddWithValue("@Param", Text);
-            command.ExecuteNonQuery();
+                command.CommandText = "UPDATE " + _nameofitem + " SET " +
+                    _columnsnameInTable[Convert.ToInt32(columnid)].ToString() +
+                    "=@Param" + " WHERE id=" + id;
+                command.Parameters.AddWithValue("@Param", Text);
+                command.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
     }
 }

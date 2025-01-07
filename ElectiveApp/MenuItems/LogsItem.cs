@@ -1,15 +1,22 @@
 ﻿using MySql.Data.MySqlClient;
+using System;
+using System.Collections.Generic;
+using System.Data.Common;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ElectiveApp.MenuItems
 {
-    internal class SubjectItem : MenuItem
+    internal class LogsItem: MenuItem
     {
-        public SubjectItem(MySqlConnection connection, DataGridView dataGridView) 
+        public LogsItem(MySqlConnection connection, DataGridView dataGridView)
         {
-            _nameofitem = "subjects";
-            _selectquery = "SELECT * FROM subjects";
-            _columnsname = ["Идентификатор", "Название"];
-            _columnsnameInTable = ["id", "name"];
+            _nameofitem = "logs";
+            _selectquery = "SELECT * FROM logs";
+            _columnsname = ["Идентификатор", "Таблица", "Автор", "Действие", "Дата"];
+            _columnsnameInTable = ["id", "table", "author", "action", "date"];
 
             _connection = connection;
             _dataGridView = dataGridView;
@@ -36,18 +43,10 @@ namespace ElectiveApp.MenuItems
 
         public override bool Insert(params string[] args)
         {
-            if (AddDataIntoBD())
-            {
-                return true;
-            }
             return false;
         }
         public override bool Update(params string[] args)
         {
-            if(UpdateDataInDB(args[0], args[1], args[2]))
-            {
-                return true;
-            }
             return false;
         }
     }

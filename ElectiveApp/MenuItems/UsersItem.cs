@@ -1,15 +1,20 @@
 ﻿using MySql.Data.MySqlClient;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ElectiveApp.MenuItems
 {
-    internal class SubjectItem : MenuItem
+    internal class UsersItem : MenuItem
     {
-        public SubjectItem(MySqlConnection connection, DataGridView dataGridView) 
+        public UsersItem(MySqlConnection connection, DataGridView dataGridView)
         {
-            _nameofitem = "subjects";
-            _selectquery = "SELECT * FROM subjects";
-            _columnsname = ["Идентификатор", "Название"];
-            _columnsnameInTable = ["id", "name"];
+            _nameofitem = "users";
+            _selectquery = "SELECT * FROM users";
+            _columnsname = ["Идентификатор", "Логин", "Пароль", "Роль"];
+            _columnsnameInTable = ["id", "login", "password", "role"];
 
             _connection = connection;
             _dataGridView = dataGridView;
@@ -44,7 +49,7 @@ namespace ElectiveApp.MenuItems
         }
         public override bool Update(params string[] args)
         {
-            if(UpdateDataInDB(args[0], args[1], args[2]))
+            if (UpdateDataInDB(args[0], args[1], args[2]))
             {
                 return true;
             }

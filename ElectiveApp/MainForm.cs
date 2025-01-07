@@ -9,12 +9,23 @@ namespace ElectiveApp
         private string _userlogin = "";
         private string? prevtext = null;
 
+        private Semester? _semester;
+
         public MainForm(string userlogin)
         {
             InitializeComponent();
 
             DataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             _userlogin = userlogin;
+
+            _semester = new Semester();
+            currentSemesterTB.Text = "Текущий семестр: " + _semester.GetCurrentSemester.ToString();
+
+            if (UserPerforms.GetAdminLevel(_userlogin) < 1)
+            {
+                UsersItem.Visible = false;
+                LogsItem.Visible = false;
+            }
         }
 
         private void StudentsItem_Click(object sender, EventArgs e)
@@ -37,19 +48,30 @@ namespace ElectiveApp
             menuItem = new SemestersItem(DataBaseIntializer.GetHashConnection(), DataGridView);
         }
 
+        private void UsersItem_Click(object sender, EventArgs e)
+        {
+            menuItem = new UsersItem(DataBaseIntializer.GetHashConnection(), DataGridView);
+        }
+
+        private void LogsItem_Click(object sender, EventArgs e)
+        {
+            menuItem = new LogsItem(DataBaseIntializer.GetHashConnection(), DataGridView);
+        }
+
         private void DataGridView_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
         {
-            if (menuItem != null && e.Row != null)
+            if (menuItem != null && e.Row != null &&
+                menuItem.Delete(DataGridView[0, e.Row.Index].Value.ToString()))
             {
-                menuItem.Delete(DataGridView[0, e.Row.Index].Value.ToString());
+                LogsPerforms.Add(menuItem.GetName, _userlogin, "Удаление");
             }
         }
 
         private void создатьToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (menuItem != null)
+            if (menuItem != null && menuItem.Insert())
             {
-                menuItem.Insert();
+                LogsPerforms.Add(menuItem.GetName, _userlogin, "Создание");
             }
         }
 
@@ -69,7 +91,13 @@ namespace ElectiveApp
                     DataGridView[e.ColumnIndex, e.RowIndex].Value = prevtext;
                     prevtext = null;
                 }
+                LogsPerforms.Add(menuItem.GetName, _userlogin, "Редактирование");
             }
+        }
+
+        private void EndSemesterBtn_Click(object sender, EventArgs e)
+        {
+            currentSemesterTB.Text = "Текущий семестр: " + _semester?.Increase();
         }
     }
 }

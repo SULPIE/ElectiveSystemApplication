@@ -16,5 +16,25 @@ namespace ElectiveApp.DataBase
                 return reader.HasRows;
             }
         }
+
+        public static int GetAdminLevel(string login)
+        {
+            MySqlConnection connection = DataBaseIntializer.GetHashConnection();
+
+            MySqlCommand command = connection.CreateCommand();
+            command.CommandText = "SELECT role FROM users WHERE login=@Param";
+            command.Parameters.AddWithValue("@Param", login);
+
+            using MySqlDataReader reader = command.ExecuteReader();
+            if (reader.HasRows)
+            {
+                reader.Read();
+                return reader.GetInt32("role");
+            }
+            else
+            {
+                return 0;
+            }
+        }
     }
 }

@@ -30,3 +30,4 @@ C:\Users\SULPIE\source\repos\ElectiveApp\ElectiveApp\obj\Debug\net8.0-windows\El
 C:\Users\SULPIE\source\repos\ElectiveApp\ElectiveApp\obj\Debug\net8.0-windows\Elective.2FA7A295.Up2Date
 C:\Users\SULPIE\source\repos\ElectiveApp\ElectiveApp\obj\Debug\net8.0-windows\ElectiveApp.MainForm.resources
 C:\Users\SULPIE\source\repos\ElectiveApp\ElectiveApp\obj\Debug\net8.0-windows\ElectiveApp.Properties.Resources.resources
+C:\Users\SULPIE\source\repos\ElectiveApp\ElectiveApp\obj\Debug\net8.0-windows\ElectiveApp.sourcelink.json

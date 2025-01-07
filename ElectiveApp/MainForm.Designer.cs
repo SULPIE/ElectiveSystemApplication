@@ -36,6 +36,10 @@
             SemestersItem = new ToolStripMenuItem();
             ReportsItem = new ToolStripMenuItem();
             создатьToolStripMenuItem = new ToolStripMenuItem();
+            currentSemesterTB = new ToolStripTextBox();
+            EndSemesterBtn = new ToolStripMenuItem();
+            UsersItem = new ToolStripMenuItem();
+            LogsItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)DataGridView).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -70,10 +74,10 @@
             // 
             menuStrip1.BackColor = SystemColors.ActiveCaption;
             menuStrip1.Dock = DockStyle.None;
-            menuStrip1.Items.AddRange(new ToolStripItem[] { StudentsItem, SubjectsItem, SemestersItem, ReportsItem, создатьToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { StudentsItem, SubjectsItem, SemestersItem, ReportsItem, создатьToolStripMenuItem, currentSemesterTB, EndSemesterBtn, UsersItem, LogsItem });
             menuStrip1.Location = new Point(2, 10);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(530, 24);
+            menuStrip1.Size = new Size(1077, 27);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -81,7 +85,7 @@
             // 
             StudentsItem.BackColor = Color.Bisque;
             StudentsItem.Name = "StudentsItem";
-            StudentsItem.Size = new Size(71, 20);
+            StudentsItem.Size = new Size(71, 23);
             StudentsItem.Text = "Студенты";
             StudentsItem.Click += StudentsItem_Click;
             // 
@@ -89,7 +93,7 @@
             // 
             SubjectsItem.BackColor = Color.Bisque;
             SubjectsItem.Name = "SubjectsItem";
-            SubjectsItem.Size = new Size(76, 20);
+            SubjectsItem.Size = new Size(76, 23);
             SubjectsItem.Text = "Предметы";
             SubjectsItem.Click += SubjectsItem_Click;
             // 
@@ -97,7 +101,7 @@
             // 
             SemestersItem.BackColor = Color.Bisque;
             SemestersItem.Name = "SemestersItem";
-            SemestersItem.Size = new Size(147, 20);
+            SemestersItem.Size = new Size(147, 23);
             SemestersItem.Text = "Предметы за семестры";
             SemestersItem.Click += SemestersItem_Click;
             // 
@@ -105,7 +109,7 @@
             // 
             ReportsItem.BackColor = Color.Bisque;
             ReportsItem.Name = "ReportsItem";
-            ReportsItem.Size = new Size(116, 20);
+            ReportsItem.Size = new Size(116, 23);
             ReportsItem.Text = "Итоговые оценки";
             ReportsItem.Click += ReportsItem_Click;
             // 
@@ -114,9 +118,45 @@
             создатьToolStripMenuItem.BackColor = Color.Gold;
             создатьToolStripMenuItem.Margin = new Padding(10, 0, 0, 0);
             создатьToolStripMenuItem.Name = "создатьToolStripMenuItem";
-            создатьToolStripMenuItem.Size = new Size(102, 20);
+            создатьToolStripMenuItem.Size = new Size(102, 23);
             создатьToolStripMenuItem.Text = "Создать запись";
             создатьToolStripMenuItem.Click += создатьToolStripMenuItem_Click;
+            // 
+            // currentSemesterTB
+            // 
+            currentSemesterTB.BackColor = Color.Bisque;
+            currentSemesterTB.Margin = new Padding(10, 0, 1, 0);
+            currentSemesterTB.Name = "currentSemesterTB";
+            currentSemesterTB.ReadOnly = true;
+            currentSemesterTB.Size = new Size(135, 23);
+            currentSemesterTB.Text = "Текущий семестр:";
+            // 
+            // EndSemesterBtn
+            // 
+            EndSemesterBtn.BackColor = Color.Gold;
+            EndSemesterBtn.Name = "EndSemesterBtn";
+            EndSemesterBtn.Size = new Size(128, 23);
+            EndSemesterBtn.Text = "Завершить семестр";
+            EndSemesterBtn.Click += EndSemesterBtn_Click;
+            // 
+            // UsersItem
+            // 
+            UsersItem.BackColor = SystemColors.HotTrack;
+            UsersItem.ForeColor = SystemColors.ControlLight;
+            UsersItem.Margin = new Padding(10, 0, 0, 0);
+            UsersItem.Name = "UsersItem";
+            UsersItem.Size = new Size(97, 23);
+            UsersItem.Text = "Пользователи";
+            UsersItem.Click += UsersItem_Click;
+            // 
+            // LogsItem
+            // 
+            LogsItem.BackColor = SystemColors.HotTrack;
+            LogsItem.ForeColor = SystemColors.ControlLight;
+            LogsItem.Name = "LogsItem";
+            LogsItem.Size = new Size(46, 23);
+            LogsItem.Text = "Логи";
+            LogsItem.Click += LogsItem_Click;
             // 
             // MainForm
             // 
@@ -145,5 +185,9 @@
         private ToolStripMenuItem SemestersItem;
         private ToolStripMenuItem ReportsItem;
         private ToolStripMenuItem создатьToolStripMenuItem;
+        private ToolStripTextBox currentSemesterTB;
+        private ToolStripMenuItem EndSemesterBtn;
+        private ToolStripMenuItem UsersItem;
+        private ToolStripMenuItem LogsItem;
     }
 }
