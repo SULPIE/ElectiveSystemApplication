@@ -1,6 +1,7 @@
 ﻿
 using MySql.Data.MySqlClient;
 using System.Data;
+using System.Windows.Forms;
 
 namespace ElectiveApp.MenuItems
 {
@@ -29,6 +30,11 @@ namespace ElectiveApp.MenuItems
         protected bool InitDataFromDB()
         {
             if (_connection == null || _dataGridView == null) return false;
+ 
+            _dataGridView.DataSource = null;
+
+            _dataGridView.Rows.Clear();
+            _dataGridView.Columns.Clear();
 
             try
             {
@@ -92,7 +98,7 @@ namespace ElectiveApp.MenuItems
                 command.CommandText = "INSERT INTO " + _nameofitem + "()" + " VALUES()";
                 command.ExecuteNonQuery();
 
-                InitDataFromDB();
+                Init();
                 return true;
             }
             catch 

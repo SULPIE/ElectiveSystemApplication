@@ -15,5 +15,24 @@ namespace ElectiveApp.DataBase
                 return reader.HasRows;
             }
         }
+
+        public static List<string?> Get()
+        {
+            List<string?> subjects = new List<string?>();
+            subjects.Add("Не указан");
+
+            MySqlCommand command = DataBaseIntializer.GetHashConnection().CreateCommand();
+            command.CommandText = "SELECT nsp FROM students";
+
+            using (MySqlDataReader reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    subjects.Add(reader["nsp"].ToString());
+                }
+            }
+
+            return subjects;
+        }
     }
 }

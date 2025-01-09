@@ -1,5 +1,6 @@
 ﻿
 using MySql.Data.MySqlClient;
+using System.Xml.Linq;
 
 namespace ElectiveApp.DataBase
 {
@@ -15,6 +16,25 @@ namespace ElectiveApp.DataBase
             {
                 return reader.HasRows;
             }
+        }
+
+        public static List<string?> Get()
+        {
+            List<string?> subjects = new List<string?>();
+            subjects.Add("Не указан");
+
+            MySqlCommand command = DataBaseIntializer.GetHashConnection().CreateCommand();
+            command.CommandText = "SELECT name FROM subjects";
+
+            using (MySqlDataReader reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    subjects.Add(reader["name"].ToString());
+                }
+            }
+
+            return subjects;
         }
     }
 }

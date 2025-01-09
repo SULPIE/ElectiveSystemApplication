@@ -77,7 +77,10 @@ namespace ElectiveApp
 
         private void DataGridView_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
-            prevtext = DataGridView[e.ColumnIndex, e.RowIndex].Value.ToString();
+            if (DataGridView[e.ColumnIndex, e.RowIndex].Value != null)
+            {
+                prevtext = DataGridView[e.ColumnIndex, e.RowIndex].Value.ToString();
+            }
         }
 
         private void DataGridView_CellEndEdit(object sender, DataGridViewCellEventArgs e)
